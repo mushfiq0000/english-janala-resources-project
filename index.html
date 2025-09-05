@@ -129,10 +129,18 @@
         </p>
 
         <form action="" class="mt-6 space-y-2">
-          <input type="text" placeholder="Enter Your Name" class="p-1 rounded-sm" />
-          <br>
-          <input type="text" placeholder=".................." class="p-1 rounded-sm" />
-          <br>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            class="p-1 rounded-sm"
+          />
+          <br />
+          <input
+            type="text"
+            placeholder=".................."
+            class="p-1 rounded-sm"
+          />
+          <br />
           <button class="btn btn-primary">Get Started</button>
         </form>
       </div>
@@ -143,27 +151,49 @@
 
     <!-- learn section -->
     <section>
-
-
       <h2 class="text-4xl font-bold mb-8 text-center">
-        <span class="text-sky-400">Let's</span>  Learn Vocabularies
+        <span class="text-sky-400">Let's</span> Learn Vocabularies
       </h2>
 
-      <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
-
+      <div
+        id="level-container"
+        class="flex gap-5 flex-wrap justify-center"
+      ></div>
     </section>
 
-    <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-rows-1 md:grid-cols-3 gap-5 rounded-xl">
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-bars loading-xl"></span>
+    </section>
 
-
-      
+    <section
+      id="word-container"
+      class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-rows-1 md:grid-cols-3 gap-5 rounded-xl"
+    >
       <div class="text-center space-y-2 col-span-full">
         <p class="text-sm text-gray-500">আপনি এখনো কোন Lesson Select করেন নি</p>
-        <h2 class="text-4xl font-semibold font-bangla">একটি Lesson Select করুন।</h2>
-
+        <h2 class="text-4xl font-semibold font-bangla">
+          একটি Lesson Select করুন।
+        </h2>
       </div>
-
     </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_model" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div class="border-1 border-[#EDF7FF] p-5 rounded-md">
+          <div id="details-container" class="space-y-6">
+            
+          </div>
+        </div>
+        <div class="py-4">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn btn-primary">Complete Learning</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <script src="./script/index.js"></script>
   </body>
