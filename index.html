@@ -44,6 +44,7 @@
   </head>
 
   <body>
+    <!-- navbar section -->
     <header>
       <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
@@ -113,13 +114,14 @@
       </div>
     </header>
 
+    <!-- banner section -->
     <section
       class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto"
     >
       <div class="content flex-1 text-center md:text-left">
-        <h1 class="text-4xl font-bold mb-8">
+        <h2 class="text-4xl font-bold mb-8">
           <span class="text-sky-400">English</span> is Easy!!
-        </h1>
+        </h2>
         <p class="font-bangla">
           আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
           আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
@@ -138,5 +140,31 @@
         <img src="./assets/hero-student.png" alt="" />
       </div>
     </section>
+
+    <!-- learn section -->
+    <section>
+
+
+      <h2 class="text-4xl font-bold mb-8 text-center">
+        <span class="text-sky-400">Let's</span>  Learn Vocabularies
+      </h2>
+
+      <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
+
+    </section>
+
+    <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-rows-1 md:grid-cols-3 gap-5 rounded-xl">
+
+
+      
+      <div class="text-center space-y-2 col-span-full">
+        <p class="text-sm text-gray-500">আপনি এখনো কোন Lesson Select করেন নি</p>
+        <h2 class="text-4xl font-semibold font-bangla">একটি Lesson Select করুন।</h2>
+
+      </div>
+
+    </section>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
